@@ -1,4 +1,4 @@
-global.Replace = false;
+global.Ghost = false;
 
 
 

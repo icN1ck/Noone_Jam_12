@@ -25,28 +25,45 @@ function rGhostColl(){
 
 function rGhostIddle(){
 if (conscience = true){
-visible = true;
 std_Ghost = rGhostC;
 }else{
-x = oHuman.x;
-y = oHuman.y;
-visible = false;	
+global.Ghost = false;	
+x = lerp(x,oHuman.x,0.05);
+y = lerp(y,oHuman.y,0.05);
+image_alpha = lerp(image_alpha, 0, 0.08);	
 }
 }
 
 function rGhostC(){
+image_alpha = lerp(image_alpha, 1, 0.08);
+global.Ghost = true;
+if (vspd = 0){	
 
 
 vspd = vspd + grv;
 	
 left = keyboard_check(ord("A"));
 right = keyboard_check(ord("D"));
-jump = keyboard_check_pressed(vk_space);	
+jump = keyboard_check(vk_space);	
 
 hspd = (right - left) * spd;
 
 if (jump){
-vspd = -6;	
+vspd = -4;	
+}
+}else{
+
+	
+left = keyboard_check(ord("A"));
+right = keyboard_check(ord("D"));
+up = keyboard_check(ord("W"));
+down = keyboard_check(ord("S"));
+jump = keyboard_check(vk_space);	
+
+hspd = (right - left) * spd;
+vspd = (down - up) * spd;
+
+
 }
 	
 	

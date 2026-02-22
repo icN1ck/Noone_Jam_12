@@ -41,9 +41,35 @@ jump = keyboard_check_pressed(vk_space);
 
 hspd = (right - left) * spd;
 
-if (jump){
-vspd = -6;	
+
+if (hspd > 0){
+dir = 1;
+}else if (hspd < 0){
+dir = -1;
 }
+
+
+
+
+
+
+if (hspd != 0){
+sprite_index = sHumanM;	
+}else{
+sprite_index = sHumanI;		
+}
+
+if (jump){
+for (var i = 0; i < 5; i++){
+
+var _prt = instance_create_layer(x, y - 3, "Inst", oPrt_Jump);
+_prt.vspd = -1
+}
+image_yscale = 0.1;
+vspd = -8;	
+}
+
+image_yscale = lerp(image_yscale, 1, 0.08)
 	
 	
 rHumanColl()	

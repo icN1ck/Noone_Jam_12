@@ -4,6 +4,7 @@ vspd = 0;
 grv = 0.9;
 spd = 2;
 
+dir = 1;
 
 
 //Teclas

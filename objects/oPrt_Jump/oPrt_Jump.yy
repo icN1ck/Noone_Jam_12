@@ -1,22 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"oHuman",
+  "%Name":"oPrt_Jump",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oHuman",
+  "name":"oPrt_Jump",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
     "path":"folders/Objetos.yy",
   },
-  "parentObjectId":{
-    "name":"oSoul",
-    "path":"objects/oSoul/oSoul.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -35,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sHumanI",
-    "path":"sprites/sHumanI/sHumanI.yy",
+    "name":"sPrt_Jump",
+    "path":"sprites/sPrt_Jump/sPrt_Jump.yy",
   },
   "spriteMaskId":null,
   "visible":true,
