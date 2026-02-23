@@ -22,37 +22,51 @@ function rGhostColl(){
     y = y + vspd;  // Atualiza a posição vertical do objeto com base na velocidade	
 	
 }	
-
 function rGhostIddle(){
 if (conscience = true){
 std_Ghost = rGhostC;
 }else{
 global.Ghost = false;	
+if (image_alpha > 0){
 x = lerp(x,oHuman.x,0.05);
 y = lerp(y,oHuman.y,0.05);
 image_alpha = lerp(image_alpha, 0, 0.08);	
+}else{
+x = oHuman.x;
+y = oHuman.y;
+y = lerp(y,oHuman.y,0.05);	
+}
 }
 }
 
 function rGhostC(){
 image_alpha = lerp(image_alpha, 1, 0.08);
 global.Ghost = true;
-if (vspd = 0){	
 
 
-vspd = vspd + grv;
-	
-left = keyboard_check(ord("A"));
-right = keyboard_check(ord("D"));
-jump = keyboard_check(vk_space);	
+if (hspd > 0){
+dir = 1;
+}else if (hspd < 0){
+dir = -1;
+}
 
-hspd = (right - left) * spd;
 
-if (jump){
-vspd = -4;	
+
+
+
+if (covered == false){
+if (hspd != 0){
+sprite_index = sGhostM;	
+}else{
+sprite_index = sGhostI;		
 }
 }else{
-
+if (hspd != 0){
+sprite_index = sGhostC;	
+}else{
+sprite_index = sGhostC;		
+}	
+}
 	
 left = keyboard_check(ord("A"));
 right = keyboard_check(ord("D"));
@@ -62,9 +76,6 @@ jump = keyboard_check(vk_space);
 
 hspd = (right - left) * spd;
 vspd = (down - up) * spd;
-
-
-}
 	
 	
 	

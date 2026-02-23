@@ -27,12 +27,15 @@ function rHumanIddle(){
 if (conscience = true){
 std_Human = rHumanC;
 }else{
-	
+sprite_index = sHumanS;	
 }
 }
 
 function rHumanC(){
+
+if (sleep == false){	
 	
+visible = true;	
 vspd = vspd + grv;
 	
 left = keyboard_check(ord("A"));
@@ -59,20 +62,29 @@ sprite_index = sHumanM;
 sprite_index = sHumanI;		
 }
 
+if (place_meeting(x,y + 1,oWall)){
 if (jump){
-for (var i = 0; i < 5; i++){
+for (var i = 0; i < 7; i++){
 
-var _prt = instance_create_layer(x, y - 3, "Inst", oPrt_Jump);
+var _prt = instance_create_layer(x, y, "Inst", oPrt_Jump);
 _prt.vspd = -1
 }
 image_yscale = 0.1;
 vspd = -8;	
 }
-
+}
 image_yscale = lerp(image_yscale, 1, 0.08)
 	
 	
-rHumanColl()	
+
+
+}else{
+
+visible = false;
+	
+}
+	
+rHumanColl();		
 	
 if (conscience = false){
 std_Human = rHumanIddle;	
