@@ -32,5 +32,5 @@
     "path":"sprites/sMirror/sMirror.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

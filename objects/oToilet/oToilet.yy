@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oMirror_Ida",
+  "%Name":"oToilet",
   "eventList":[],
   "managed":true,
-  "name":"oMirror_Ida",
+  "name":"oToilet",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -28,9 +28,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sMirror",
-    "path":"sprites/sMirror/sMirror.yy",
+    "name":"sToilet",
+    "path":"sprites/sToilet/sToilet.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

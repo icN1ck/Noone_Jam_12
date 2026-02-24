@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oMirror_Ida",
+  "%Name":"oGhost_Jose",
   "eventList":[],
   "managed":true,
-  "name":"oMirror_Ida",
+  "name":"oGhost_Jose",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -28,9 +28,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sMirror",
-    "path":"sprites/sMirror/sMirror.yy",
+    "name":"sGhostI_Jose",
+    "path":"sprites/sGhostI_Jose/sGhostI_Jose.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
