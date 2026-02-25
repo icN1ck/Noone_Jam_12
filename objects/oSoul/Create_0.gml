@@ -2,7 +2,7 @@ conscience = noone;
 hspd = 0;
 vspd = 0;
 grv = 0.9;
-spd = 2;
+spd = 1;
 
 dir = 1;
 

@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oWall",
+  "%Name":"oCam_Quarto",
   "eventList":[],
   "managed":true,
-  "name":"oWall",
+  "name":"oCam_Quarto",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sWall",
-    "path":"sprites/sWall/sWall.yy",
+    "name":"sCam",
+    "path":"sprites/sCam/sCam.yy",
   },
   "spriteMaskId":null,
   "visible":false,

@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oWall",
+  "%Name":"oCam_Refeitorio",
   "eventList":[],
   "managed":true,
-  "name":"oWall",
+  "name":"oCam_Refeitorio",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sWall",
-    "path":"sprites/sWall/sWall.yy",
+    "name":"sCam",
+    "path":"sprites/sCam/sCam.yy",
   },
   "spriteMaskId":null,
   "visible":false,

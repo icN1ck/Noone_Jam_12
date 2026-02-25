@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oWall",
+  "%Name":"oFundo",
   "eventList":[],
   "managed":true,
-  "name":"oWall",
+  "name":"oFundo",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -28,9 +28,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sWall",
-    "path":"sprites/sWall/sWall.yy",
+    "name":"sFundo",
+    "path":"sprites/sFundo/sFundo.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

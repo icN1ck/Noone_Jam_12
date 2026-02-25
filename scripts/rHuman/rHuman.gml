@@ -70,7 +70,7 @@ var _prt = instance_create_layer(x, y, "Inst", oPrt_Jump);
 _prt.vspd = -1
 }
 image_yscale = 0.1;
-vspd = -8;	
+vspd = -6;	
 }
 }
 image_yscale = lerp(image_yscale, 1, 0.08)
