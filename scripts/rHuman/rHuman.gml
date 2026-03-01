@@ -64,6 +64,13 @@ sprite_index = sHumanI;
 
 if (place_meeting(x,y + 1,oWall)){
 if (jump){
+	
+var _sound = choose(snd_Jump1, snd_Jump2);
+var _instancia_som = audio_play_sound(_sound, 1, false);
+
+// Muda o tom entre 0.9 (mais grave) e 1.1 (mais agudo)
+audio_sound_pitch(_instancia_som, random_range(0.9, 1.1));	
+	
 for (var i = 0; i < 7; i++){
 
 var _prt = instance_create_layer(x, y, "Inst", oPrt_Jump);

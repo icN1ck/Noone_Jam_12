@@ -77,6 +77,18 @@ jump = keyboard_check(vk_space);
 hspd = (right - left) * spd;
 vspd = (down - up) * spd;
 	
+if (jump){
+	sprite_index = sGhost_Atk;
+	if (alarm[0] < 1){
+		var _buffing = 15
+		var _buffing_Flash = 12
+	instance_create_layer(x + _buffing * dir ,y - 3,"Inst",oBullet);
+	var _inst = instance_create_layer(x + _buffing_Flash * dir ,y - 3,"Inst",oBullet_Flash);
+	_inst.image_xscale = -dir;
+	alarm[0] = 15
+	}
+	
+}
 	
 	
 	

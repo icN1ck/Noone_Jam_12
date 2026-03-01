@@ -10,3 +10,4 @@ std_Ghost = rGhostIddle;
 
 meu_xscale = 1;
 
+alarm[0] = 0;

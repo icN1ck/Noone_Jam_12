@@ -11,3 +11,5 @@ dir = 1;
 left = 0;
 right = 0;
 jump = 0;
+
+
